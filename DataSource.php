@@ -52,7 +52,7 @@
 		##### DATA CREATION #####
 		var $momentum = 0;		# momentum = people are more willing to buy or sell if other people seem to be doing it
 		
-		function newPrice() {
+		function tick() {
 			# creates new stock price (a tick), adds to $allData.
 			
 			##### MOMENTUM CREATION #####
@@ -90,7 +90,7 @@
 			//$price = current + random(weighted mom position) + mom;
 			$randomValue = (lcg_value()*2-1); #lcg_value = float rand between 0 and 1, I make it between -1 and 1
 			
-			if(($randomValue > 0) == ($this->momentum > 0)) { # Awesome? Yes.
+			if(($randomValue > 0) == ($this->momentum > 0)) { # momentum only affects random if in the same direction.
 				$randomValue *= abs($this->momentum);
 				# if they are the same, make momentum affect randomness. Abs because multiplication sucks.
 			}
@@ -127,7 +127,7 @@
 	//$a->allData = array(10, 10.5, 11, 9, 10, 10.5);
 	
 	for ($i=0; $i < 100; $i++) { 
-		$a->newPrice();
+		$a->tick();
 	}
 	echo "<img src='" . $a->chartData() . "' />";
 	echo "<br /><img src='" . $a->chartVolume() . "' />";

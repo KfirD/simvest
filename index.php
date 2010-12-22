@@ -3,7 +3,6 @@
 <html>
 	<head>
 		<title>welcome to simvest</title>
-		<?php include ("library.php") ; ?>
 		
 		<link rel="stylesheet" type="text/css" href="base.css" />
 	</head>
@@ -11,7 +10,7 @@
 		<div id="box">
 			<p class="big">Welcome to SimVest</p>
 			<p class="awkward">Enter your name to start playing</p>
-			<form action="start_game.php" method="get" >
+			<form action="start_game.php" method="post" >
 				<div id="name"><input type="text" name="name" /></div>
 			</form>
 		</div>
