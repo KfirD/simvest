@@ -8,9 +8,13 @@
 		<link rel="stylesheet" type="text/css" href="base.css" />
 	</head>
 	<body>
-		<form action="start_game.php" method="post">
-			Name: <input type="text" name="name" />
-		</form>
+		<div id="box">
+			<p class="big">Welcome to SimVest</p>
+			<p class="awkward">Enter your name to start playing</p>
+			<form action="start_game.php" method="post" >
+				<div id="name"><input type="text" name="name" /></div>
+			</form>
+		</div>
 
 
 

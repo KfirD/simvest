@@ -9,6 +9,7 @@
 	<body>
 <?php
 	$player = new Player($_POST['name'], 50);
+	echo $player->get_name();
 ?>
 
 

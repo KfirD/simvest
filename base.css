@@ -1,0 +1,18 @@
+* {
+	font-family:sans-serif;
+}
+#box {
+	width: 500px;
+	height:200px;
+	text-align:center;
+	padding: 20px;
+	border: solid;
+	margin:auto;
+	margin-top:100px;
+}
+p.big {
+	font-size:35px;
+}
+p.awkward {
+	color:grey;
+}

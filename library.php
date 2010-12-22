@@ -8,7 +8,7 @@ class Player {
 		$this->money=$player_cash;
 	}
 	function get_name() {
-		return $this->$name;
+		return $this->name;
 	}
 }
 
