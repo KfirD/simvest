@@ -33,6 +33,7 @@
 		}
 		
 		function chartVolume() {
+			# charts stock activity (momentum)
 			
 			return str_replace("\t", "" , str_replace("\n","","
 			http://chart.apis.google.com/chart
@@ -52,6 +53,7 @@
 		var $momentum = 0;		# momentum = people are more willing to buy or sell if other people seem to be doing it
 		
 		function newPrice() {
+			# creates new stock price (a tick), adds to $allData.
 			
 			##### MOMENTUM CREATION #####
 			if(count($this->allData) >= $this->stockSubsetCount) { # enough stock to properly calculate momentum
@@ -76,7 +78,7 @@
 					array_push($this->allData, 10);
 					return;
 				} else {
-					$randomValue = (lcg_value()*2-1); #lcg_value = float rand between 0 and 1, I make it between -1 and 1
+					$randomValue = (lcg_value()*2-1); # lcg_value = float rand between 0 and 1, I make it between -1 and 1
 					$price = end($this->allData) + $randomValue;
 					array_push($this->allData, $price);
 					return;
@@ -112,7 +114,7 @@
 			
 			
 			
-			# adds new price to array
+			# adds new price to $allData array
 			array_push($this->allData, $price);
 		}
 		
