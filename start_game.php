@@ -3,14 +3,16 @@
 <html>
 	<head>
 		<title>simvest</title>
-		<?php include ("library.php") ; ?>
+		<?php include ("library.php");  ?>
 		<link rel="stylesheet" type="text/css" href="base.css" />
 	</head>
 	<body>
-<?php
-	$player = new Player($_POST['name'], 50);
-	echo $player->get_name();
-?>
+		<?php
+			$player = new Player($_GET['name'], 50);
+		?>
+		<p>Name: <?php echo $player->get_name(); ?></p>
+		<p>Money: $<?php echo $player->get_money() ?></p>
+		
 
 
 

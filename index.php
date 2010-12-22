@@ -11,7 +11,7 @@
 		<div id="box">
 			<p class="big">Welcome to SimVest</p>
 			<p class="awkward">Enter your name to start playing</p>
-			<form action="start_game.php" method="post" >
+			<form action="start_game.php" method="get" >
 				<div id="name"><input type="text" name="name" /></div>
 			</form>
 		</div>

@@ -10,6 +10,9 @@ class Player {
 	function get_name() {
 		return $this->name;
 	}
+	function get_money() {
+		return $this->money;
+	}
 }
 
 
