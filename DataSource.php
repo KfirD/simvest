@@ -120,6 +120,7 @@
 	}
 
 
+	/* SAMPLE USAGE (LIKE WEBSITE):
 	$a = new DataSource;
 	//$a->allData = array(10, 10.5, 11, 9, 10, 10.5);
 	
@@ -128,7 +129,7 @@
 	}
 	echo "<img src='" . $a->chartData() . "' />";
 	echo "<br /><img src='" . $a->chartVolume() . "' />";
-	
+	*/
 	
 
 ?>
