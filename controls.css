@@ -11,7 +11,6 @@ input[type="text"]:focus {
 	background-color: #EFE;
 }
 input[type="submit"] {
-	background-color: red;
 	padding: 6px 15px 6px 15px;	
 	
 	-webkit-border-radius: 3px;
