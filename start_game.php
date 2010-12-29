@@ -14,11 +14,12 @@ session_start(); // *lovingly* start up your PHP session!
 	<body onload="javascript:setTimeout('window.location.href=window.location.href;',10000);">
 		<?php
 		
+		$_SESSION['stock_num'] = $_SESSION['stock_num'] + $_POST['buy'] - $_POST['sell'] //gets the stock number, new line
 		if(isset($_POST['name'])) { 
 			// alternatively, we could check the session, forcing people to stick with their names.
 			
 			if($_POST['name']=='rockefeller' or $_POST['name']=='night fury') { // yep.
-				$player = new Player($_POST['name'], 100);
+				$player = new Player($_POST['name'], 10000000000);
 			} else {
 				$player = new Player($_POST['name'], 100);
 			}
@@ -39,6 +40,7 @@ session_start(); // *lovingly* start up your PHP session!
 		
 		<p>Name: <?php echo $_SESSION['player']->get_name(); ?></p>
 		<p>Money: $<?php echo $_SESSION['player']->get_money(); ?></p>
+		<p>Number of stock(s): <?php echo $_SESSION['stock_num']; //new line ?>
 		
 		<form action="start_game.php" method="post" >
 			<input type="text" name="amount" />
