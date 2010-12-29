@@ -12,6 +12,7 @@ session_start(); // *lovingly* start up your PHP session!
 		<link rel="stylesheet" type="text/css" href="controls.css" />
 	</head>
 	<body onload="document.transaction.amount.focus();setTimeout('window.location.href=window.location.href;',5000);">
+		<div id="everything">
 		<?php
 			
 		
@@ -79,16 +80,18 @@ session_start(); // *lovingly* start up your PHP session!
 			echo "<br /><img src='" . $player->stockData->chartVolume() . "' />";
 			echo "<p>Current price: $" . round(end($player->stockData->allData)*100)/100 . "</p>";
 		?>
-		
-		<p>Name: <?php echo $player->get_name(); ?></p>
-		<p>Money: $<?php echo $player->get_money(); ?></p>
-		<p>Number of stock(s): <?php echo $player->stocks; //new line ?>
+		<ul id="data">
+			<li class="data">Name: <?php echo $player->get_name(); ?></li>
+			<li class="data">Money: $<?php echo $player->get_money(); ?></li>
+			<li class="data">Number of stock(s): <?php echo $player->stocks; //new line ?></li>
+		</ul>
 		
 		<form name="transaction" action="start_game.php" method="post" >
 			<input type="text" name="amount" />
 			<input type="submit" name="buy" value="Buy" />
 			<input type="submit" name="sell" value="Sell" />
 		</form>
+		</div>
 	</body>
 
 

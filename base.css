@@ -16,3 +16,10 @@ p.big {
 p.awkward {
 	color:grey;
 }
+.data {
+	display:inline;
+	padding-right: 20px;
+}
+#everything {
+	text-align: center;
+}
