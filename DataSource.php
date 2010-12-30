@@ -24,7 +24,7 @@
 			&cht=ls
 			&chco=3D7930
 			&chds=0,20
-			&chd=t:" .  implode(",", $this->allData)  . "
+			&chd=t:" .  implode(",", $this->someData($this->allData))  . "
 			&chg=-1,-1,1,1
 			&chls=2,4,0
 			&chm=B,C5D4B5BB,0,0,0
@@ -45,8 +45,20 @@
 			&cht=bvg
 			&chco=A2C180
 			&chds=0,0.7
-			&chd=t:" .  implode(",", $this->momenta)  . ""
+			&chd=t:" .  implode(",", $this->someData($this->momenta))  . ""
 			));
+		}
+		
+		function someData($src = null, $num = 20) { ## takes a given number of most recent values from an array, default: 20
+			if (!$src) $src = $this->allData; ## by default, set src array to allData
+			
+			$src_count = count($src);
+			
+			if ($src_count > $num) {
+				$src = array_slice($src, -$num);
+			}
+			
+			return $src;
 		}
 		
 		##### DATA CREATION #####
