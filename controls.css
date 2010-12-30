@@ -10,7 +10,7 @@ input[type="text"] {
 input[type="text"]:focus {
 	background-color: #EFE;
 }
-input[type="button"] {
+input[type="button"], input[type="submit"] {
 	padding: 6px 15px 6px 15px;	
 	
 	-webkit-border-radius: 3px;
@@ -38,7 +38,7 @@ input[type="button"] {
 		rgb(250,250,250) 100%
 	);
 }
-input[type="button"]:hover {
+input[type="button"]:hover, input[type="submit"]:hover {
 	background: -webkit-gradient(
 		linear,
 		left bottom,

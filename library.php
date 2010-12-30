@@ -24,5 +24,6 @@ class Player {
 	}
 }
 
+session_start(); // *lovingly* start up your PHP session! 
 
 ?>

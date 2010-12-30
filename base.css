@@ -14,7 +14,7 @@ p.big {
 	font-size:35px;
 }
 p.awkward {
-	color:grey;
+	color:gray;
 }
 .data {
 	display:inline;
@@ -22,4 +22,10 @@ p.awkward {
 }
 #everything {
 	text-align: center;
+}
+form#endgame {
+	position:absolute;
+	top:0;
+	right:0;
+	margin:10px;
 }
