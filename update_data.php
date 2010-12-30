@@ -30,16 +30,16 @@ if ((int)$_POST['amount'] > 0) {
 			$return['error'] = "You have too few stocks."; // again, messy-looking, but temporary
 		}
 	}
-} else if (!isset($_POST['amount'])) {
-	$player->stockData->tick();	
-
-	$return['current_price'] = round(end($player->stockData->allData)*100)/100;
-	$return['big_chart'] = $player->stockData->chartData();
-	$return['little_chart'] = $player->stockData->chartVolume();
-	$return['money'] = $player->get_money();
-	$return['stocks'] = $player->stocks;
-
-	echo json_encode($return);
 }
+
+$player->stockData->tick();	
+
+$return['current_price'] = round(end($player->stockData->allData)*100)/100;
+$return['big_chart'] = $player->stockData->chartData();
+$return['little_chart'] = $player->stockData->chartVolume();
+$return['money'] = $player->get_money();
+$return['stocks'] = $player->stocks;
+
+echo json_encode($return);
 
 ?>
