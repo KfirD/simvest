@@ -28,7 +28,7 @@
 			&chg=-1,-1,1,1
 			&chls=2,4,0
 			&chm=B,C5D4B5BB,0,0,0
-			&chtt=simvest"
+			&chtt=Coal%20App"
 			));
 		}
 		

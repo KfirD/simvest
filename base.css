@@ -3,12 +3,16 @@
 }
 #box {
 	width: 500px;
-	height:200px;
+	height:250px;
 	text-align:center;
 	padding: 20px;
 	border: solid;
 	margin:auto;
 	margin-top:100px;
+}
+input#your_name {
+	text-align:center;
+	font-size:22px;
 }
 p.big {
 	font-size:35px;
