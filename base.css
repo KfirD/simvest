@@ -1,6 +1,9 @@
 * {
 	font-family:sans-serif;
 }
+body.setup {
+	background:#444;
+}
 #box {
 	width: 500px;
 	height:250px;
@@ -9,6 +12,7 @@
 	border: solid;
 	margin:auto;
 	margin-top:100px;
+	background:#FFF;
 }
 input#your_name {
 	text-align:center;

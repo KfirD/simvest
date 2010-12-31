@@ -6,7 +6,7 @@
 		
 		<link rel="stylesheet" type="text/css" href="base.css" />
 	</head>
-	<body>
+	<body class="setup">
 		<div id="box">
 			<p class="big">Welcome to Coal App</p>
 			<div class="buttons">
@@ -14,7 +14,7 @@
 				<div class="fb"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FCoal-App%2F151185061576632&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe></div>
 				<div class="clear"></div>
 			</div>
-			<p class="description">Buy and sell coal stocks. <span>($1 broker fee on all transaction)</span></p>
+			<p class="description">Simulating buying and selling fake coal stocks.</p>
 			<p class="awkward">Enter your name to start playing</p>
 			<form method="post" >
 				<div id="name"><input id="your_name" type="text" name="name" /></div>
