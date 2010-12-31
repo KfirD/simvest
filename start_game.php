@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 	<head>
-		<title>welcome to coal app</title>
+		<title>COAL $<?php echo round(end($player->stockData->allData)*100)/100; ?></title>
 		<link rel="stylesheet" type="text/css" href="base.css" />
 		<link rel="stylesheet" type="text/css" href="controls.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>

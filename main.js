@@ -33,5 +33,6 @@ function update_data() {
 		$("p.current_price span").text(data.current_price);
 		$("li.money span").text(data.money);
 		$("li.stocks span").text(data.stocks);
+		$("title").text("COAL $"+data.current_price);
 	});
 }

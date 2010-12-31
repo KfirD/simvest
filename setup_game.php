@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 	<head>
-		<title>welcome to coal app</title>
+		<title>Coal App &mdash; buy and sell fake coal stocks!</title>
 		
 		<link rel="stylesheet" type="text/css" href="base.css" />
 	</head>
