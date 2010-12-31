@@ -9,11 +9,16 @@
 	<body>
 		<div id="box">
 			<p class="big">Welcome to Coal App</p>
+			<div class="buttons">
+				<div class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-text="play coal app -- an addicting game where you buy and sell stocks" data-count="horizontal" data-via="kfirdolev" data-related="netspencer:naplognews">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
+				<div class="fb"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FCoal-App%2F151185061576632&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe></div>
+				<div class="clear"></div>
+			</div>
 			<p class="description">Buy and sell coal stocks. <span>($1 broker fee on all transaction)</span></p>
 			<p class="awkward">Enter your name to start playing</p>
 			<form method="post" >
 				<div id="name"><input id="your_name" type="text" name="name" /></div>
-			</form>
+			</form>			
 		</div>
 		
 		<script type="text/javascript">
@@ -31,6 +36,6 @@
 		</script>
 
 	</body>
-
+	
 
 </html>

@@ -33,3 +33,17 @@ form#endgame {
 	right:0;
 	margin:10px;
 }
+div.buttons {
+	width:220px;
+	margin:auto;
+}
+div.buttons div.fb {
+	float:left;
+}
+div.buttons div.twitter {
+	float:left;
+}
+div.clear {
+	display:block;
+	clear:both;
+}
