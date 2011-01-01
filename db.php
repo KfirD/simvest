@@ -23,10 +23,10 @@ class Database {
 		return $result;
 	}
 	
-	function addUser($user_id, $money, $stocks) {
+	function addUser($user_id, $money, $stocks, $name = null) {
 		if (!$this->get_user($user_id)) {
 			## insert
-			mysql_query("INSERT INTO users (user_id, money, stocks) VALUES ('$user_id', '$money', '$stocks')", $this->link);
+			mysql_query("INSERT INTO users (user_id, money, stocks, name) VALUES ('$user_id', '$money', '$stocks', '$name')", $this->link);
 		}
 	}
 	
