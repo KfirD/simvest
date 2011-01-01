@@ -1,5 +1,9 @@
 <?php
-include ("library.php");
+require("library.php");
+require("db.php");
+
+$db = new Database();
+
 $player = new Player('', 0); // Needs initialization before starting session. Why? Who knows...
 session_start(); // *lovingly* start up your PHP session! 
 
@@ -15,6 +19,7 @@ if ((int)$_POST['amount'] > 0) {
 		if($stocksToBuy*$stockPrice <= $player->money) {
 			$player->money -= $stocksToBuy*$stockPrice + 1;	// subtract price + brokerage fee
 			$player->stocks += $stocksToBuy;				// give stocks
+			
 		} else {
 			$return['error'] = "You have too little money."; // messy-looking, but temporary
 		}
@@ -26,14 +31,19 @@ if ((int)$_POST['amount'] > 0) {
 		if($stocksToSell <= $player->stocks) {
 			$player->stocks -= $stocksToSell;					// subtract stocks
 			$player->money += $stocksToSell*$stockPrice - 1;	// give money - brokerage fee
+			
 		} else {
 			$return['error'] = "You have too few stocks."; // again, messy-looking, but temporary
 		}
 	}
+	
+	$db->updateMoney($_SESSION['user_id'], $player->get_money());
+	$db->updateStocks($_SESSION['user_id'], $player->stocks);
 }
 
 $player->stockData->tick();	
 
+$return['user_id'] = $_SESSION['user_id'];
 $return['current_price'] = round(end($player->stockData->allData)*100)/100;
 $return['big_chart'] = $player->stockData->chartData();
 $return['little_chart'] = $player->stockData->chartVolume();

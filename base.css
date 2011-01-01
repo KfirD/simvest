@@ -28,15 +28,21 @@ p.awkward {
 	display:inline;
 	padding-right: 20px;
 }
-#everything {
-	text-align: center;
-}
-form#endgame {
+center {
 	position:absolute;
 	top:0;
 	right:0;
 	margin:10px;
 }
+#everything {
+	text-align: center;
+}
+center form {
+	margin-left:10px;
+	margin-bottom:10px;
+	float:left;
+}
+
 div.buttons {
 	width:220px;
 	margin:auto;
@@ -50,4 +56,30 @@ div.buttons div.twitter {
 div.clear {
 	display:block;
 	clear:both;
+}
+div.sub-data {
+	margin-top:20px;
+	text-align:center;
+}
+a.fb_share {
+	text-decoration:none;
+	color:inherit;
+	background:#EEE;
+	border:1px #CCC solid;
+	padding:10px;
+}
+a.fb_share:hover {
+	background:#b7c1da;
+	border-color:#4f63a1;
+}
+a.fb-login {
+	position:relative;
+	margin:auto;
+	display:block;
+	width:200px;
+	height:33px;
+	background:url("signup.png");
+}
+a.fb-login:active {
+	top:1px;
 }

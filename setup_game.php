@@ -15,10 +15,13 @@
 				<div class="clear"></div>
 			</div>
 			<p class="description">Simulating buying and selling fake coal stocks.</p>
-			<p class="awkward">Enter your name to start playing</p>
+			<p class="awkward">Login with Facebook to start playing</p>
+			<a class="fb-login" href="<?php echo $loginUrl ?>"></a>
+			<!--
 			<form method="post" >
 				<div id="name"><input id="your_name" type="text" name="name" /></div>
-			</form>			
+			</form>
+			-->
 		</div>
 		
 		<script type="text/javascript">

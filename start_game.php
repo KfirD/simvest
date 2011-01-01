@@ -21,15 +21,29 @@
 			<li class="data money">Money: $<span><?php echo $player->get_money(); ?></span></li>
 			<li class="data stocks">Number of stock(s): <span><?php echo $player->stocks;?></span></li>
 		</ul>
-		
+				
 		<form name="transaction" method="post" >
 			<input type="text" name="amount" />
 			<input type="button" name="buy" value="Buy" />
 			<input type="button" name="sell" value="Sell" />
 		</form>
-		<form id="endgame" method="post">
-			<input name="endgame" type="submit" value="End Game" />
-		</form>
+		
+		<div class="sub-data">
+			<?php if(!$did_share):?>
+			<a class="fb_share" href="index.php?q=fb_share">Click here to share on Facebook and earn $10 virtual dollars</a>
+			<?php endif;?>
+		</div>
+		
+		<center>
+			<form id="startover" method="get">
+				<input type="hidden" name="q" value="startover" />
+				<input name="endgame" type="submit" value="Start Over" />
+			</form>
+			<form id="endgame" method="get">
+				<input type="hidden" name="q" value="logout" />
+				<input name="endgame" type="submit" value="Logout" />
+			</form>
+		</center>
 		</div>
 		
 		<script type="text/javascript">
