@@ -29,7 +29,7 @@
 		</form>
 		
 		<div class="sub-data">
-			<?php if(!$did_share):?>
+			<?php if(!$did_share && $me):?>
 			<a class="fb_share" href="index.php?q=fb_share">Click here to share on Facebook and earn $10 virtual dollars</a>
 			<?php endif;?>
 		</div>
