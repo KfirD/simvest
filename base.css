@@ -83,3 +83,7 @@ a.fb-login {
 a.fb-login:active {
 	top:1px;
 }
+p.awkward a {
+	color:#354b90;
+	text-decoration:none;
+}
