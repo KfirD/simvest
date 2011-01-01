@@ -5,6 +5,8 @@
 		<title>Coal App &mdash; buy and sell fake coal stocks!</title>
 		
 		<link rel="stylesheet" type="text/css" href="base.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
+		<script src="home.js" type="text/javascript"></script>
 	</head>
 	<body class="setup">
 		<div id="box">
@@ -15,13 +17,15 @@
 				<div class="clear"></div>
 			</div>
 			<p class="description">Simulating buying and selling fake coal stocks.</p>
-			<p class="awkward">Login with Facebook to start playing</p>
+			<p class="awkward">Login with <a rel="facebook" class="switch" href="#">Facebook</a> or <a rel="name" class="switch" href="#">enter your name</a> to start playing</p>
+			<div class="switch-login facebook">
 			<a class="fb-login" href="<?php echo $loginUrl ?>"></a>
-			<!--
+			</div>
+			<div style="display:none;" class="switch-login name">
 			<form method="post" >
 				<div id="name"><input id="your_name" type="text" name="name" /></div>
 			</form>
-			-->
+			</div>
 		</div>
 		
 		<script type="text/javascript">
