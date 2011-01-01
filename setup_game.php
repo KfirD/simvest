@@ -28,6 +28,11 @@
 			</div>
 		</div>
 		
+		 <div id="brought_by">
+		<p>Brought to you by: <a class="by_link" href="http://twitter.com/mralpaca">Max Grusky</a>, <a class="by_link"
+		href="http://twitter.com/kfirdolev">Kfir Dolev</a>, <a class="by_link" href="http://twitter.com/netspencer">Spencer Schoeben</a></p>
+		</div>
+		
 		<script type="text/javascript">
 
 		  var _gaq = _gaq || [];

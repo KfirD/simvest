@@ -87,3 +87,12 @@ p.awkward a {
 	color:#354b90;
 	text-decoration:none;
 }
+#brought_by
+{
+text-align:center;
+position:fixed;
+bottom:5px;
+width:100%;
+}
+.by_link {
+color:black;

@@ -20,6 +20,8 @@
 			<li class="data name">Name: <span><?php echo $player->get_name(); ?></spna></li>
 			<li class="data money">Money: $<span><?php echo $player->get_money(); ?></span></li>
 			<li class="data stocks">Number of stock(s): <span><?php echo $player->stocks;?></span></li>
+			<li class="data stocks">Worth of stock(s): <span><?php echo int($player->stocks)*(round(end($player->stockData->allData)*100)/100);?></span></li>
+			
 		</ul>
 				
 		<form name="transaction" method="post" >
